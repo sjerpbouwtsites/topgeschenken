@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testopdracht topgeschenken.nl</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        background-color: #f7f6f5;
+        color: #212121;
+      }
+      .section__outer {
+        margin: 40px auto;
+        width: 55ch;
+        max-width: calc(100% - 20px)
+      }
+      .section__self + .section__self {
+        margin-top: 60px;
+        position: relative;
+      }
+      .section__self + .section__self::before {
+        position: absolute;
+        top: -29px;
+        left: 50px;
+        width: calc(100% - 100px);
+        display: block;
+        content: '';
+        height: 2px;
+        background-color: #999;
+      }
+      .section__subtitle {
+        font-style: italic;
+        font-size: .9em;
+      }
+      .column__outer {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        columns: 4;
+        font-size: .75em;
+        text-align: center;
+      }
+      .column__item + .column__item {
+        margin-top: 4px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top-app"></div>
+    <script src="/topopdracht.js"></script>
+  </body>
+</html>
