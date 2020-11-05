@@ -65,6 +65,13 @@ function stringReverseInteraction() {
   });
 }
 
+/**
+ * from an initial array with arrays of numbers, shaped like a matrix, creates a right and left flipped table.
+ *
+ * @see opdracht 4 description
+ *
+ * @returns string 3 HTML tables
+ */
 function roteerArray() {
   const initialArray = [
     [1, 2, 3, 4, 5],
